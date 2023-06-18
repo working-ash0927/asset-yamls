@@ -1,0 +1,22 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: disk-asset
+spec:
+  builds:
+  - sha512: f9f2d5006e15d1288ad5b0d333be43c7b387c16b0c4c34530a91f65ef007ebf4f761daaae83b21f3a4fbcef8f4b6ed4f9136c8833ceee0e32ee27330277e13ef
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/disk-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'
+  - sha512: ab5ea2c67bc5adc2601107282b875352080b84477bfb61db33427e64b6ba8e5d51e79d58fbd3e0cb450584d066f34ef7ca0c690c4399aefd8295cc85ad4f117e
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/disk-asset-arm.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'arm64'
+  - sha512: a6075ca5726f737dc866341a35f0dc02fe8e3049b13283ca31fec3eebbbfc5b68e4007e3f72e564fdf11aec699ab99ef14ca92d42ed1b955109d2ffbdec8e80d
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/disk-asset-win.tar.gz
+    filters:
+      - entity.system.os == 'windows'
+      - entity.system.arch == 'amd64'

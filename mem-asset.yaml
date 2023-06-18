@@ -1,0 +1,22 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: mem-asset
+spec:
+  builds:
+  - sha512: 2cb2de8a0353c08295feeda74fee274b82aa64a5b8daab5e21387678b3ed6cc491e90719fb5a03799147c7bfda4d3f15ea1e314e07a89b30518646feda21a4ae
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/mem-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'
+  - sha512: 7b3c3cb1e451e2bd676a4d516dbf2b50223046770afc3173c00a04ba4b578dfc4148be055e9c0a426ed0c4304693627b62e4f4ca22fcc7f08fd3a3fba9b119ab
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/mem-asset-arm.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'arm64'
+  - sha512: df00ece35499463ca61da6a0cb4390c7bebe5a75cfb31b1d17a97a69e630412aa55c4c151be688dad1a2dffff4ec4765606ff5408370e60ab8ef95827c047515
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/mem-asset-win.tar.gz
+    filters:
+      - entity.system.os == 'windows'
+      - entity.system.arch == 'amd64'

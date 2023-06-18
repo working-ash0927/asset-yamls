@@ -1,0 +1,22 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: pro-asset
+spec:
+  builds:
+  - sha512: ec1bdb68a047e4fe31ff24abca2f89caa22f7c691f277261b779e5bdbae258aefc8537974b5c55b3caab64c4517ab2d3ed6a6b504a97f8c4b379898d3ddd3cd7
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/pro-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'
+  - sha512: 3ca8a4daacdee47e7fb5cc6d57226f7bdeff3d301c55277c01b02ecab6d9881b0753051434b6e22824275129076f2620d409aad346d1625fbd265157dd40d69b
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/pro-asset-arm.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'arm64'
+  - sha512: 05318b2a57d45540d2757f641532b286676377ca2f957957e3aa9dfafa175bc027dc005248d391d4fe4bf4a37e09e7b9486cb67b1fc36cadc1cad367bdc9b759
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/pro-asset-win.tar.gz
+    filters:
+      - entity.system.os == 'windows'
+      - entity.system.arch == 'amd64'

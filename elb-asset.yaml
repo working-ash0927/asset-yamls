@@ -1,0 +1,12 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: elb-asset
+spec:
+  builds:
+  - sha512: 3443af3e22e8925daabd0b1047d8be51bb600b938e289c6d1c07ddc5d1697f0fa7dc57a88961d0622e64eab25b06b006b472087039033ac443ae49b2826b0f48
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/elb-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'

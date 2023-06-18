@@ -1,0 +1,12 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: ec2-asset
+spec:
+  builds:
+  - sha512: 2a293ce446b315334086b901a4c532c81aad2926d41d46c08181c774e429f4192cd491ac087392b615de1a7eadce3de332bc9b62eb586c08c503b33a0fa66241
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ec2-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'

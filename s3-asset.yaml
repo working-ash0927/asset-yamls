@@ -1,0 +1,12 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: s3-asset
+spec:
+  builds:
+  - sha512: 3900c2b7cfa5e969cb19bb314bdddabc70acb32b1e0a07878a4a11b579e6d6e09ac947ae5defcb6123478fc9e78b507eb46fbf81c9f2b8a861c8983778307732
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/s3-asset.tar.gz
+    filters:
+      - entity.system.os == 'linux'
+      - entity.system.arch == 'amd64'

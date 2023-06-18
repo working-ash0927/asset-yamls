@@ -1,0 +1,11 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: net-asset
+spec:
+  builds:
+  - sha512: f71eb84fff82ed3f2566cd7d1563da20d3e295bade58cad4a4f26fe1c26517926346c8b0e2a0440503bb6a80b86bb8be747b45be64fa693b92e1e6b07225b358
+    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/net-asset-win.tar.gz
+    filters:
+      - entity.system.os == 'windows'
