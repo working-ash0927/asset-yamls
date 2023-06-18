@@ -1,0 +1,32 @@
+---
+type: Asset
+api_version: core/v2
+metadata:
+  name: ping-asset
+spec:
+  builds:
+    #  - sha512: e27d2e2480c0a339c53f36699fe4a3ce2588e7242567a53df5c1b545224e391f8dbd2758121747af1b77662f8aa7804ff3abb8fceeb5222e4102ebc0340a8e24
+    #    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ping-asset-win.tar.gz
+    #    filters:
+    #      - entity.system.os == 'windows'
+    #      - entity.system.arch == 'amd64'
+    #  - sha512: 3bb79c664ae0a30faff0ef92c23b264f4477dad5a9be10668ddbaad8bc2807cbabcf6d465adb07b56d05e4e1a70385c64b161c6b2a0f2f801e17aed8b811d39a
+    #    url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ping-asset.tar.gz
+    #    filters:
+    #      - entity.system.os == 'linux'
+    #      - entity.system.arch == 'amd64'
+    - sha512: a8a3c2070ceeccfe9447dac3c0336ce079a8b32d33470dbebad4e101faa9086720b41fa349e5b2474453aacf804d1874793efcfdca4d7f5b2e05a59a69cd21c4
+      url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ping-asset-win.tar.gz
+      filters:
+        - entity.system.os == 'windows'
+        - entity.system.arch == 'amd64'
+    - sha512: e739b896f78aca1b44d646013f7e9530f8d55e64858571ef432b30317d5d61d690df26ca9066287943246a6fdc9b887a7af2ced8d341ffd2fe213a39b019e54e
+      url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ping-asset-arm.tar.gz
+      filters:
+        - entity.system.os == 'linux'
+        - entity.system.arch == 'arm'
+    - sha512: 147519c743297c908138775bd02089adbd7f822f5a717a1938ac398146d26f68141c4f45d462b0f195d2cdda3daa57740c856f4f1d38734bb1feb9f60f9ab060
+      url: https://00bc65e48c.s3.ap-northeast-2.amazonaws.com/ping-asset.tar.gz
+      filters:
+        - entity.system.os == 'linux'
+        - entity.system.arch == 'amd64'
